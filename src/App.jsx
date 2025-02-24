@@ -4,19 +4,18 @@ import "./App.css";
 function App() {
   const [notas, setNotas] = useState([]); // Para almacenar las notas que se vayan generando
 
-  const [inputTitulo, setInputTitulo] = useState("");
+  const [inputTitulo, setInputTitulo] = useState(""); //Para almacenar el titulo de la nota y controlar el input
   const [inputDescripcion, setInputDescripcion] = useState("");
 
   const mostrarModal = () => {
-    document.querySelector("#contenedorformularioParaNotas").style.display =
-      "flex";
+    document.querySelector("#contenedorformularioParaNotas").style.display ="flex";
   };
 
   const cerrarModal = () => {
-    document.querySelector("#contenedorformularioParaNotas").style.display =
-      "none";
+    document.querySelector("#contenedorformularioParaNotas").style.display ="none";
   };
 
+  //Se crea un objeto para agregarlo al state de notas, luego se borran los input y se cierra el modal
   const agregarTarea = (e) => {
     e.preventDefault();
     const nuevaNota = {
@@ -30,6 +29,13 @@ function App() {
     
     cerrarModal();
   };
+
+  //Se obtiene el index de la nota, luego se filtran las notas y se actualiza el state de notas para renderizar de nuevo
+  const eliminarTarea = (e) => {
+    const indexAEliminar = parseInt(e.target.closest(".nota").dataset.index);
+    const notasFiltradas = notas.filter((_, index) => index !== indexAEliminar);
+    setNotas(notasFiltradas);
+  }
 
   return (
     <>
@@ -65,8 +71,8 @@ function App() {
         <div id="contenedorDeNotas">
           {notas.map((nota,index)=>{
             return (
-              <div key={index} className="nota">
-                <button className="borrarNota"><i class="fa-solid fa-trash"></i></button>
+              <div key={index} className="nota" data-index={index}>
+                <button onClick={eliminarTarea} className="borrarNota"><i class="fa-solid fa-trash"></i></button>
                 <h2>{nota.titulo}</h2>
                 <hr />
                 <p>{nota.descripcion}</p>
