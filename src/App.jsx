@@ -74,7 +74,7 @@ function App() {
           {notas.map((nota,index)=>{
             return (
               <div key={index} className="nota" data-index={index}>
-                <button onClick={eliminarTarea} className="borrarNota"><i class="fa-solid fa-trash"></i></button>
+                <button onClick={eliminarTarea} className="borrarNota"><i className="fa-solid fa-trash"></i></button>
                 <h2>{nota.titulo}</h2>
                 <hr />
                 <p>{nota.descripcion}</p>

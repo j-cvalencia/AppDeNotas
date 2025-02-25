@@ -74,6 +74,7 @@
   min-height: calc(100vh - (5rem + 30px + 2rem + 2rem));
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 .nota{
   background-color: orange;
@@ -102,4 +103,59 @@ hr{
   padding: 0.8rem;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.0);
+}
+
+/*RESPONSIVE
+=================================================================
+Escritorios muy grandes
+-----------------------------------------------------------------*/
+@media (min-width: 1200px) { }
+
+/*Tablets en horizontal y escritorios normales
+-----------------------------------------------------------------*/
+@media (min-width: 760px) and (max-width: 1199px) { 
+  #formularioParaNotas{
+    width: 60%;
+  }
+
+  .nota{
+    background-color: orange;
+    width: 40%;
+    height: 45vh;
+  }
+
+  #contenedorDeNotas{
+    justify-content: space-between;
+  }
+}
+
+/*Moviles en horizontal o tablets en vertical
+-----------------------------------------------------------------*/
+@media (max-width: 767px) { 
+  #formularioParaNotas{
+    width: 80%;
+  }
+
+  .nota{
+    width: 65%;
+    height: 50vh;
+    margin: 0.5rem;
+  }
+
+  #contenedorDeNotas{
+    justify-content: center;
+  }
+}
+
+/*Moviles en vertical
+-----------------------------------------------------------------*/
+@media (max-width: 480px){ 
+  #formularioParaNotas{
+    width: 90%;
+    height: 60%;
+  }
+
+  .nota{
+    width: 90%;
+  }
 }
