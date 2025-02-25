@@ -1,6 +1,6 @@
-NotasApp - Aplicación de Notas con React  
+AppDeNotas - Aplicación de Notas con React  
 
-NotasApp es una aplicación simple para gestionar notas desarrollada con React. Permite a los usuarios agregar, visualizar y eliminar notas de manera interactiva.  
+AppDeNotas es una aplicación simple para gestionar notas desarrollada con React. Permite a los usuarios agregar, visualizar y eliminar notas de manera interactiva.  
 
 ✨ Características  
 
@@ -18,7 +18,7 @@ NotasApp es una aplicación simple para gestionar notas desarrollada con React. 
 ## 🚀 Instalación y Uso  
 
 1. Clona el repositorio:  
-   git clone https://github.com/j-cvalencia/NotasApp.git
+   git clone https://github.com/j-cvalencia/AppDeNotas.git
    
 2. Accede al directorio:  
    cd NotasApp
