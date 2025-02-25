@@ -49,13 +49,15 @@ function App() {
             value={inputTitulo} 
             onChange={(e) => setInputTitulo(e.target.value)}
             type="text" 
-            placeholder="Titulo" 
+            placeholder="Titulo"
+            maxLength={40} 
           />
           <textarea
             value={inputDescripcion}
             type="text"
             onChange={(e) => setInputDescripcion(e.target.value)}
-            placeholder="Descripcion"
+            placeholder="Descripcion...(Limite de 700 caracteres)"
+            maxLength={700}
           />
           <button id="enviar" type="submit">
             Enviar
