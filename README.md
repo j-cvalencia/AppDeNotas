@@ -1,8 +1,30 @@
-# React + Vite
+NotasApp - Aplicación de Notas con React  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NotasApp es una aplicación simple para gestionar notas desarrollada con React. Permite a los usuarios agregar, visualizar y eliminar notas de manera interactiva.  
 
-Currently, two official plugins are available:
+✨ Características  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Agregar notas con título y descripción.  
+- Interfaz modal para ingresar nuevas notas.  
+- Eliminación rápida de notas con un botón.  
+- Diseño minimalista y funcional.  
+
+🛠️ Tecnologías Utilizadas  
+
+- React  
+- useState para manejo de estado  
+- CSS para estilización  
+
+## 🚀 Instalación y Uso  
+
+1. Clona el repositorio:  
+   git clone https://github.com/j-cvalencia/NotasApp.git
+   
+2. Accede al directorio:  
+   cd NotasApp
+   
+3. Instala las dependencias:  
+   npm install
+   
+4. Ejecuta la aplicación:  
+   npm run dev
